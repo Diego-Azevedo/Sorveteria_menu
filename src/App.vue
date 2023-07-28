@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="menu">
-      <h1>Cardápio</h1>
+      <h1>Cardápio IslandRoll</h1>
       <div v-for="item in menu" :key="item.id" class="menu-item">
         <span>{{ item.name }}</span>
         <div class="price-container">
@@ -96,6 +96,7 @@ export default {
   justify-content: space-between;
   height: 100vh;
   font-family: Arial, sans-serif;
+  background-color: rgb(207, 207, 43);
 }
 
 .menu {
@@ -118,7 +119,7 @@ export default {
   padding: 20px;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 95%;
 }
 
 .selected-item {
@@ -131,5 +132,9 @@ export default {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+}
+
+h1 {
+  text-align: center;
 }
 </style>
